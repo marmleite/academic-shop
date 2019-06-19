@@ -66,6 +66,24 @@ class Produtos extends CI_Controller {
 		}
 	}
 
+	public function filtro($id_categoria = null)
+	{
+		if(!$this->session->has_userdata('id') || $id_categoria === NULL)
+		{
+			
+			redirect('login/index','refresh');
+			
+		}else{
+
+			$data['produtos'] = $this->produtos_model->get_produtos_categoria($id_categoria);
+			$data['id_usuario'] = $this->session->has_userdata('id');
+
+			$this->load->view('templates/header', $data);
+			$this->load->view('produtos/view', $data);
+			$this->load->view('templates/footer', $data);
+		}
+	}
+
 	public function cadastrar()
 	{
 		$this->load->helper('form');

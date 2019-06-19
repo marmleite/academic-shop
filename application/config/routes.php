@@ -55,6 +55,7 @@ $route['produtos/index'] = 'produtos/index';
 $route['produtos/novo'] = 'produtos/novo';
 $route['produtos/cadastrar'] = 'produtos/cadastrar';
 $route['produtos/(:any)'] = 'produtos/view/$1';
+$route['produtos/categorias/(:any)'] = 'produtos/filtrar/$1';
 
 $route['usuarios'] = 'usuarios';
 $route['usuarios/cadastrar'] = 'usuarios/cadastrar';

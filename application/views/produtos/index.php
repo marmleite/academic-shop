@@ -8,41 +8,32 @@
 						<div class="panel-group category-products" id="accordian">
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Livros</a></h4>
+									<h4 class="panel-title"><a href="<?php echo base_url() ?>index.php/produtos/categorias/1">Livros</a></h4>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Xerox</a></h4>
+									<h4 class="panel-title"><a href="<?php echo base_url() ?>index.php/produtos/categorias/2">Xerox</a></h4>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Anotações</a></h4>
+									<h4 class="panel-title"><a href="<?php echo base_url() ?>index.php/produtos/categorias/3">Anotações</a></h4>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Trabalhos</a></h4>
+									<h4 class="panel-title"><a href="<?php echo base_url() ?>index.php/produtos/categorias/4">Trabalhos</a></h4>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Provas</a></h4>
+									<h4 class="panel-title"><a href="<?php echo base_url() ?>index.php/produtos/categorias/5">Provas</a></h4>
 								</div>
 							</div>
 						</div>
 						<!--/category-products-->
-						<div class="price-range">
-							<!--price-range-->
-							<h2>Preço</h2>
-							<div class="well text-center">
-								<input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600"
-									data-slider-step="5" data-slider-value="[250,450]" id="sl2"><br />
-								<b class="pull-left">R$ 0</b> <b class="pull-right">R$ 600</b>
-							</div>
-						</div>
-						<!--/price-range-->
+						
 					</div>
 				</div>
 
@@ -58,7 +49,7 @@
 										<div class="single-products">
 											<div class="productinfo text-center">
 												<img src="<?php echo base_url() ?>public/images1/caderno.jpg" alt="" />
-												<h2>R$ <?php echo $produto['preco'] ?></h2>
+												<h2>R$ <?php echo $produto['valor'] ?></h2>
 												<p><?php echo $produto['detalhes'] ?></p>
 												<a href="<?php echo base_url() ?>index.php/produtos/<?php echo $produto['id'] ?>" class="btn btn-outline-warning mb-4"><i class=""></i>Detalhes</a>
 											</div>
